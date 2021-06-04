@@ -5,7 +5,7 @@ import axios from 'axios'
 function App() {
   const [state,setState] = useState(null)
   useEffect(()=>{
-    axios.get("http://localhost:5000/api/posts")
+    axios.get("/api/posts")
     .then(response =>{
       console.log(response)
     })

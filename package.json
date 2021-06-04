@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": " index.js",
-    "server": " nodemon index.js"
+    "server": " nodemon index.js",
+    "heroku-postbuild": " cd client && npm i && npm run build"
   },
   "repository": {
     "type": "git",
@@ -20,10 +21,13 @@
   },
   "homepage": "https://github.com/LambdaSchool/node-api4-project#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "env": "0.0.2",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "knex": "^0.95.6",
+    "sqlite3": "^5.0.2"
   },
   "devDependencies": {
     "eslint": "^7.27.0",
